@@ -26,6 +26,7 @@
     "@nestjs/mongoose": "^10.0.10",
     "@nestjs/platform-express": "^10.0.0",
     "cross-env": "^7.0.3",
+    "joi": "^17.13.3",
     "mongoose": "^8.6.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"

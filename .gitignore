@@ -56,3 +56,7 @@ pids
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 notes.md
+
+.env.development
+.env.test
+.env.production

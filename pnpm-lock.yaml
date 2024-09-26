@@ -106,6 +106,9 @@ devDependencies:
   '@types/mongoose-unique-validator':
     specifier: ^1.0.9
     version: 1.0.9(@aws-sdk/client-sso-oidc@3.658.0)
+  '@types/multer':
+    specifier: ^1.4.12
+    version: 1.4.12
   '@types/node':
     specifier: ^20.3.1
     version: 20.16.6
@@ -2674,6 +2677,12 @@ packages:
       - '@aws-sdk/client-sso-oidc'
       - aws-crt
       - supports-color
+    dev: true
+
+  /@types/multer@1.4.12:
+    resolution: {integrity: sha512-pQ2hoqvXiJt2FP9WQVLPRO+AmiIm/ZYkavPlIQnx282u4ZrVdztx0pkh3jjpQt0Kz+YI0YhSG264y08UJKoUQg==}
+    dependencies:
+      '@types/express': 4.17.21
     dev: true
 
   /@types/node@20.16.6:
@@ -6259,6 +6268,7 @@ packages:
 
   /memory-pager@1.5.0:
     resolution: {integrity: sha512-ZS4Bp4r/Zoeq6+NLJpP+0Zzm0pR8whtGPf1XExKLJBAczGMnSi3It14OiNCStjQjM6NU1okjQGSxgEZN8eBYKg==}
+    requiresBuild: true
 
   /mensch@0.3.4:
     resolution: {integrity: sha512-IAeFvcOnV9V0Yk+bFhYR07O3yNina9ANIN5MoXBKYJ/RLYPurd2d0yw14MDhpr9/momp0WofT1bPUh3hkzdi/g==}
@@ -7983,6 +7993,7 @@ packages:
 
   /sparse-bitfield@3.0.3:
     resolution: {integrity: sha512-kvzhi7vqKTfkh0PZU+2D2PIllw2ymqJKujUcyPMd9Y75Nv4nPbGJZXNhxsgdQab2BmlDct1YnfQCguEvHr7VsQ==}
+    requiresBuild: true
     dependencies:
       memory-pager: 1.5.0
 

@@ -50,7 +50,8 @@
     "rxjs": "^7.8.1",
     "sharp": "^0.33.5",
     "streamifier": "^0.1.1",
-    "stripe": "^16.12.0"
+    "stripe": "^16.12.0",
+    "zarinpal-checkout": "^0.3.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
@@ -67,6 +68,7 @@
     "@types/passport-local": "^1.0.38",
     "@types/streamifier": "^0.1.2",
     "@types/supertest": "^6.0.0",
+    "@types/zarinpal-checkout": "^0.2.4",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^8.42.0",

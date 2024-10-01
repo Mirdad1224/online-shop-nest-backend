@@ -98,6 +98,12 @@ importers:
       streamifier:
         specifier: ^0.1.1
         version: 0.1.1
+      stripe:
+        specifier: ^16.12.0
+        version: 16.12.0
+      zarinpal-checkout:
+        specifier: ^0.3.0
+        version: 0.3.0
     devDependencies:
       '@nestjs/cli':
         specifier: ^10.0.0
@@ -141,6 +147,9 @@ importers:
       '@types/supertest':
         specifier: ^6.0.0
         version: 6.0.2
+      '@types/zarinpal-checkout':
+        specifier: ^0.2.4
+        version: 0.2.4
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.0.0
         version: 8.7.0(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1)(typescript@5.6.2)
@@ -1482,6 +1491,9 @@ packages:
   '@types/yargs@17.0.33':
     resolution: {integrity: sha512-WpxBCKWPLr4xSsHgz511rFJAM+wS28w2zEO1QDNY5zM/S8ok70NNfztH0xwhqKyaK0OHCbN98LDAZuy1ctxDkA==}
 
+  '@types/zarinpal-checkout@0.2.4':
+    resolution: {integrity: sha512-MIIFu2wAEtsb3Z3fsd25hixGRCt1784OHorlCCjSLty1OTq6k7kHcFfQx2ccsQy8kTK4URrFSZx1eAzHufEHiA==}
+
   '@typescript-eslint/eslint-plugin@8.7.0':
     resolution: {integrity: sha512-RIHOoznhA3CCfSTFiB6kBGLQtB/sox+pJ6jeFu6FxJvqL8qRxq/FfGO/UhsGgQM9oGdXkV4xUgli+dt26biB6A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1728,6 +1740,9 @@ packages:
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+
+  axios@1.7.7:
+    resolution: {integrity: sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==}
 
   babel-jest@29.7.0:
     resolution: {integrity: sha512-BrvGY3xZSwEcCzKvKsCi2GgHqDqsYkOP4/by5xCgIwGXQxIEh+8ew3gmrE1y7XRR6LHZIj6yLYnUi/mm2KXKBg==}
@@ -2501,6 +2516,15 @@ packages:
 
   flatted@3.3.1:
     resolution: {integrity: sha512-X8cqMLLie7KsNUDSdzeN8FYK9rEt4Dt67OsG/DNGnYTSDBG4uFAJFBnUeiV+zCVAvwFy56IjM9sH51jVaEhNxw==}
+
+  follow-redirects@1.15.9:
+    resolution: {integrity: sha512-gew4GsXizNgdoRyqmyfMHyAmXsZDk6mHkSxZFCzW9gwlbtOW44CDtYavM+y+72qD/Vq2l550kMF52DT8fOLJqQ==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
 
   foreground-child@3.3.0:
     resolution: {integrity: sha512-Ld2g8rrAyMYFXBhEqMz8ZAHBi4J4uS1i/CxGMDnjyFWddMXLVcDp051DZfu+t7+ab7Wv6SMqpWmyFIj5UbfFvg==}
@@ -3804,6 +3828,9 @@ packages:
     resolution: {integrity: sha512-llQsMLSUDUPT44jdrU/O37qlnifitDP+ZwrmmZcoSKyLKvtZxpyV0n2/bD/N4tBAAZ/gJEdZU7KMraoK1+XYAg==}
     engines: {node: '>= 0.10'}
 
+  proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+
   pug-attrs@3.0.0:
     resolution: {integrity: sha512-azINV9dUtzPMFQktvTXciNAfAuVh/L/JCl0vtPCwvOA21uZrC08K/UnmrL+SXGEVc1FwzjW62+xw5S/uaLj6cA==}
 
@@ -4164,6 +4191,10 @@ packages:
   strip-json-comments@3.1.1:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
+
+  stripe@16.12.0:
+    resolution: {integrity: sha512-H7eFVLDxeTNNSn4JTRfL2//LzCbDrMSZ+2q1c7CanVWgK2qIW5TwS+0V7N9KcKZZNpYh/uCqK0PyZh/2UsaAtQ==}
+    engines: {node: '>=12.*'}
 
   strnum@1.0.5:
     resolution: {integrity: sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==}
@@ -4572,6 +4603,9 @@ packages:
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+
+  zarinpal-checkout@0.3.0:
+    resolution: {integrity: sha512-Fxl836MKPYTFZi/ew0XsJbgGQmKD0TkKawOePv1OXn1ritlb+y95+ycg3bTGVP6mn+wYmRFCZYkrRdl1TajD8Q==}
 
 snapshots:
 
@@ -6851,6 +6885,8 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
+  '@types/zarinpal-checkout@0.2.4': {}
+
   '@typescript-eslint/eslint-plugin@8.7.0(@typescript-eslint/parser@8.7.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1)(typescript@5.6.2)':
     dependencies:
       '@eslint-community/regexpp': 4.11.1
@@ -7131,6 +7167,14 @@ snapshots:
   async@3.2.6: {}
 
   asynckit@0.4.0: {}
+
+  axios@1.7.7:
+    dependencies:
+      follow-redirects: 1.15.9
+      form-data: 4.0.0
+      proxy-from-env: 1.1.0
+    transitivePeerDependencies:
+      - debug
 
   babel-jest@29.7.0(@babel/core@7.25.2):
     dependencies:
@@ -8035,6 +8079,8 @@ snapshots:
       rimraf: 3.0.2
 
   flatted@3.3.1: {}
+
+  follow-redirects@1.15.9: {}
 
   foreground-child@3.3.0:
     dependencies:
@@ -9847,6 +9893,8 @@ snapshots:
       forwarded: 0.2.0
       ipaddr.js: 1.9.1
 
+  proxy-from-env@1.1.0: {}
+
   pug-attrs@3.0.0:
     dependencies:
       constantinople: 4.0.1
@@ -10262,6 +10310,11 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
+  stripe@16.12.0:
+    dependencies:
+      '@types/node': 20.16.6
+      qs: 6.13.0
+
   strnum@1.0.5: {}
 
   superagent@9.0.2:
@@ -10670,3 +10723,9 @@ snapshots:
   yn@3.1.1: {}
 
   yocto-queue@0.1.0: {}
+
+  zarinpal-checkout@0.3.0:
+    dependencies:
+      axios: 1.7.7
+    transitivePeerDependencies:
+      - debug
